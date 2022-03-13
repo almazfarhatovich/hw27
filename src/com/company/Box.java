@@ -1,7 +1,7 @@
 package com.company;
 
 public class Box<Box> {
-    Box razmer;
+    private Box razmer;
 
     public Box() {
     }
