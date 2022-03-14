@@ -1,30 +1,29 @@
 package com.company;
 
 public class Box<Box> {
-    private Box razmer;
+    private Box var;
 
     public Box() {
     }
 
-    public Box(Box box) {
-        this.razmer = box;
+    public Box(Box var) {
+        this.var = var;
     }
 
-    public Box getRazmer() {
-        return razmer;
+    public Box getVar() {
+        return var;
     }
 
-    public void setRazmer(Box razmer) {
-        this.razmer = razmer;
+    public void setVar(Box var) {
+        this.var = var;
     }
 
-    public static <Box> Box var(Box box) {
+    public static <Box> Box method(Box box) {
         return box;
     }
 
     @Override
     public String toString() {
-        return "Box:" +
-                "razmer:" + razmer;
+        return "Box:" + var;
     }
 }
